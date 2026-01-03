@@ -28,9 +28,7 @@ struct FetchService {
 		let decoder = JSONDecoder()
 		decoder.keyDecodingStrategy = .convertFromSnakeCase
 		let pokemon = try decoder.decode(FetchedPokemon.self, from: data)
-		
-		print("fetched \(pokemon.name.capitalized)")
-		
+				
 		return pokemon
 	}
 }

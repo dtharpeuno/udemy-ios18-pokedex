@@ -13,5 +13,10 @@
         <attribute name="speed" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="sprite" attributeType="URI"/>
         <attribute name="types" attributeType="Transformable" valueTransformerName="NSSercureUnarchivedFromData" customClassName="[String]"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="id"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
     </entity>
 </model>

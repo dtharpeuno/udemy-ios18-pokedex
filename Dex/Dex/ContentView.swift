@@ -69,7 +69,6 @@ struct ContentView: View {
 									pokemon.spriteImage
 										.resizable()
 										.scaledToFit()
-										.frame(width: 100, height: 100)
 								}
 
 								

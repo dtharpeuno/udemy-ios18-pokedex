@@ -130,7 +130,7 @@ struct ContentView: View {
 				}
 				.navigationDestination(for: Pokemon.self) {
 					pokemon in
-					Text(pokemon.name ?? "no name")
+					PokemonDetail().environmentObject(pokemon)
 				}
 				.toolbar {
 					ToolbarItem(placement: .navigationBarTrailing) {

@@ -58,7 +58,10 @@ struct PersistenceController {
 		
 		if inMemory {
 			container.persistentStoreDescriptions.first!.url = URL(fileURLWithPath: "/dev/null")
+		} else {
+			container.persistentStoreDescriptions.first!.url = FileManager.default.containerURL(forSecurityApplicationGroupIdentifier: "group.com.dtharpeuno.DexGroup")!.appending(path: "Dex.sqlite")
 		}
+		
 		container.loadPersistentStores(completionHandler: { (storeDescription, error) in
 			if let error = error as NSError? {
 				print(error)

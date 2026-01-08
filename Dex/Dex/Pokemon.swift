@@ -10,7 +10,7 @@ import Foundation
 import SwiftData
 import SwiftUI
 
-@MainActor // this is bad , for asset error
+@MainActor
 @Model
 class Pokemon: Decodable {
 	

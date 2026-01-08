@@ -9,6 +9,7 @@
 //import SwiftUI
 //import CoreData
 //
+//@MainActor
 //struct Provider: TimelineProvider {
 //	var randomPokemon: Pokemon {
 //		var results: [Pokemon] = []
@@ -48,8 +49,8 @@
 //			
 //			let entry = SimpleEntry(
 //				date: entryDate,
-//				name: entryPokemon.name!,
-//				types: entryPokemon.types!,
+//				name: entryPokemon.name,
+//				types: entryPokemon.types,
 //				sprite: entryPokemon.spriteImage
 //			)
 //			entries.append(entry)
